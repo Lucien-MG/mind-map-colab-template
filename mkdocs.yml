@@ -1,55 +1,26 @@
 site_name: My Digital Brain
-site_description: A modern searchable wiki with interactive mind maps.
+site_url: https://Lucien-MG.github.io/mind-map-colab-template/
 
 theme:
   name: material
-  language: en
-  # Modern Color Palette
-  palette:
-    # Palette toggle for light/dark mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: amber
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep purple
-      accent: amber
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-
-  # Modern Layout Features
   features:
-    - navigation.tabs              # Top horizontal menu
-    - navigation.sections          # Grouped sidebar items
-    - navigation.top               # "Back to top" button
-    - navigation.tracking          # Highlights sidebar as you scroll
-    - search.suggest               # Google-like search suggestions
-    - search.highlight             # Highlights search terms on page
-    - search.share                 # Create links to specific searches
-    - content.code.copy            # Adds a "Copy" button to code blocks
+    - navigation.tabs
 
-# Mind Map & Search Plugins
 plugins:
   - search
 
-# 2. This logic prevents the theme from "highlighting" the map code
 markdown_extensions:
+  # ⚠️ THIS SECTION IS CRITICAL ⚠️
+  # It tells MkDocs: "Do not format markmap blocks. Pass them as raw HTML."
   - pymdownx.superfences:
       custom_fences:
         - name: markmap
           class: language-markmap
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-# Use the JSDelivr CDN which sends the correct MIME types
+# Load the visualization engine from the web (No plugin needed)
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18.0/dist/index.js
+  - https://cdn.jsdelivr.net/npm/markmap-autoloader@0.17.0/dist/index.js
 
-# This ensures the mind map container has the right spacing
 extra_css:
-  - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.0/dist/style.css
-
+  - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css
