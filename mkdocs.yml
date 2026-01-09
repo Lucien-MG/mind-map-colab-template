@@ -1,7 +1,11 @@
-site_name: My Digital Brain
+site_name: My Digital Garden
 theme:
   name: material
+  palette:
+    primary: indigo
+    accent: light blue
   features:
+    - navigation.tabs
     - search.suggest
     - search.highlight
 
