@@ -37,11 +37,12 @@ theme:
 plugins:
   - search
 
+# 2. This logic prevents the theme from "highlighting" the map code
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: markmap
-          class: markmap
+          class: language-markmap
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 # Use the JSDelivr CDN which sends the correct MIME types
