@@ -36,9 +36,6 @@ theme:
 # Mind Map & Search Plugins
 plugins:
   - search
-  - markmap:
-      base_path: docs
-      encoding: utf-8
 
 markdown_extensions:
   - pymdownx.superfences
