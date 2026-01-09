@@ -40,12 +40,3 @@ plugins:
       base_path: docs
       encoding: utf-8
 
-# Extra Customization
-markdown_extensions:
-  - admonition                    # Cool info/warning boxes
-  - pymdownx.details              # Collapsible folders
-  - pymdownx.superfences:         # Allows markmap inside other blocks
-      custom_fences:
-        - name: markmap
-          class: markmap
-          format: !!python/name:mkdocs_markmap.plugin.render_markdown
