@@ -40,3 +40,9 @@ plugins:
       base_path: docs
       encoding: utf-8
 
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: markmap
+          class: markmap
+          format: !!python/name:mkdocs_markmap.plugin.render_markdown
