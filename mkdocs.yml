@@ -47,9 +47,9 @@ markdown_extensions:
 
 # Use the JSDelivr CDN which sends the correct MIME types
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/markmap-autoloader@0.17.0/dist/index.js
+  - https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18.0/dist/index.js
 
 # This ensures the mind map container has the right spacing
 extra_css:
-  - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css
+  - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.0/dist/style.css
 
