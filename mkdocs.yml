@@ -1,0 +1,10 @@
+site_name: My Digital Brain
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - markmap
