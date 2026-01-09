@@ -40,6 +40,10 @@ plugins:
       base_path: docs
       encoding: utf-8
 
+# This ensures the browser knows how to draw the map
+extra_javascript:
+  - https://unpkg.com/markmap-autoloader@0.17.2/dist/ant-full.js
+
 markdown_extensions:
   - admonition
   - pymdownx.details
