@@ -40,11 +40,9 @@ plugins:
       base_path: docs
       encoding: utf-8
 
-# This ensures the browser knows how to draw the map
+# This script finds ```markmap blocks and transforms them in the browser
 extra_javascript:
-  - https://unpkg.com/markmap-autoloader@0.17.2/dist/ant-full.js
+  - [https://cdn.jsdelivr.net/npm/markmap-autoloader@0.17](https://cdn.jsdelivr.net/npm/markmap-autoloader@0.17)
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
   - pymdownx.superfences
