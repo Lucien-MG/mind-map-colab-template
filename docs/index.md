@@ -1,12 +1,19 @@
-# Welcome to my Wiki
+# Central Intelligence
 
-This is a self-hosted knowledge base built with **MkDocs** and **Markdown**.
+Welcome to your modern knowledge base. This site is indexed in real-time—use the **Search (Ctrl+K)** to find anything.
 
-### 🔍 How to use
-* **Search:** Use the search bar at the top right to find any keyword instantly.
-* **Navigation:** Use the tabs or the sidebar to browse topics.
-* **Mind Maps:** Check out the [Project Roadmap](roadmap.md) to see the interactive mind map.
+!!! abstract "Core Purpose"
+    This wiki serves as a digital garden for project tracking, quick notes, and visual brainstorming using interactive mind maps.
 
-### Quick Links
-- [Internal Project Notes](roadmap.md)
-- [External Documentation](https://squidfunk.github.io/mkdocs-material/)
+---
+
+## 🚀 Quick Navigation
+
+| Section | Content Type | Status |
+| :--- | :--- | :--- |
+| [Strategy](brainstorm.md) | Mind Maps | 🟢 Active |
+| [Technical Guides](guides/setup.md) | Documentation | 🟡 In Progress |
+| [Archive](archive.md) | Old Notes | ⚪ Empty |
+
+!!! tip "Keyboard Shortcut"
+    Press `F` to focus search or `S` to toggle between light and dark mode.
