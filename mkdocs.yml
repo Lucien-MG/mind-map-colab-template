@@ -41,8 +41,6 @@ plugins:
       encoding: utf-8
 
 markdown_extensions:
-  - pymdownx.superfences:
-      custom_fences:
-        - name: markmap
-          class: markmap
-          format: !!python/name:mkdocs_markmap.render:render_markdown
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
