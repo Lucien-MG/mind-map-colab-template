@@ -51,3 +51,4 @@ extra_javascript:
 # This ensures the mind map container has the right spacing
 extra_css:
   - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css
+
