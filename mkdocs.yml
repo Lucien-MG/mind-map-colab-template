@@ -40,9 +40,13 @@ plugins:
       base_path: docs
       encoding: utf-8
 
-# This script finds ```markmap blocks and transforms them in the browser
-extra_javascript:
-  - [https://cdn.jsdelivr.net/npm/markmap-autoloader@0.17](https://cdn.jsdelivr.net/npm/markmap-autoloader@0.17)
-
 markdown_extensions:
   - pymdownx.superfences
+
+# Use the JSDelivr CDN which sends the correct MIME types
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/markmap-autoloader@0.17.0/dist/index.js
+
+# This ensures the mind map container has the right spacing
+extra_css:
+  - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css
