@@ -45,4 +45,4 @@ markdown_extensions:
       custom_fences:
         - name: markmap
           class: markmap
-          format: !!python/name:mkdocs_markmap.plugin.render_markdown
+          format: !!python/name:mkdocs_markmap.render:render_markdown
