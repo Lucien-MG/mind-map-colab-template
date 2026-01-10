@@ -14,11 +14,14 @@ markdown_extensions:
   # It tells MkDocs: "Do not format markmap blocks. Pass them as raw HTML."
   - pymdownx.superfences:
       custom_fences:
-        - name: mermaid
-          class: mermaid
+        - name: markmap
+          class: language-markmap
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-# Mermaid is natively supported by Material for MkDocs, but we explicitly enable it via superfences above for robustness.
-# No extra Javascript needed for basic Mermaid support in Material theme if configured correctly,
-# specifically the 'mermaid' class on the fence handles the rendering in many contexts.
+# Load the visualization engine from the web (No plugin needed)
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/markmap-autoloader@0.17.0/dist/index.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css
 
