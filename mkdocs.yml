@@ -24,4 +24,6 @@ extra_javascript:
 
 extra_css:
   - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css
+  - stylesheets/extra.css
+
 
