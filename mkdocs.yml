@@ -15,8 +15,8 @@ markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: markmap
-          class: language-markmap
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          class: markmap
+          format: !!python/name:pymdownx.superfences.fence_div_format
 
 # Load the visualization engine from the web (No plugin needed)
 extra_javascript:
